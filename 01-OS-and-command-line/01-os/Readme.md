@@ -1,5 +1,7 @@
 # Operating System (OS)
 
+## Table of Contents
+
 # Operating System
 
 - An OS is a software that acts as an interface between computer hardware components and the user.
@@ -18,6 +20,31 @@
   - Memory management
   - Device drivers
   - File system management
+
+# Linux vs. Windows
+
+- File Systems
+
+  - Windows
+    - Uses drive letters (`C;`, `D;`, `E;`)
+    - E.g., `C:\Users\Admin\Documents`
+  - Linux:
+    - Everything starts at root /. No letters → partitions are mounted into the tree.
+    - E.g., → `/home/user/documents`
+
+- Permissions & Security
+
+  - Windows:
+    - Uses **ACLs** (**Access Control Lists**). Access tied to users & groups, but less strict.
+  - Linux:
+    - Uses **rwx** (**Read, Write, Execute**) for Owner | Group | Others.
+    - Example → -rwxr-xr-- → stricter & more secure.
+
+- System File Locations
+  - Windows:
+    - `C:\Windows\System32` (system) | `C:\Users\` (user data)
+  - Linux:
+    - `/etc` (configs) | `/bin` (binaries) | `/var` (logs) | `/home` (user data)
 
 # Daemons
 
